@@ -12,7 +12,7 @@
 		<meta name="description" content="Naomi I. Morduch Toubman makes cool things." />
 		<meta name="keywords" content="naomi, ui/ux, posters, html, sass, css, design" /> 
 
-		<meta property="og:url" content="{{ site.url }}{% if page.url != "/index.html" %}{{ site.baseurl }}{{ page.url }}{% endif %}"/>
+		<meta property="og:url" content="{{ site.url }}{% if page.url != "/index.html" %}{{ page.url }}{% endif %}"/>
 		<meta property="og:title" content="Naomi I. Morduch Toubman"/>
 		<meta property="og:type" content="website" />
 		<meta property="og:image" content="{{ site.url }}media/{{ today.image }}" />
@@ -20,17 +20,17 @@
 
 		<title>{% if page.title %}{{ page.title }} | {% endif %}Naomi I. Morduch Toubman</title>
 
-		<link rel="stylesheet" href="{{ site.baseurl }}/static/lib/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
-		<link rel="stylesheet" href="{{ site.baseurl }}/static/lib/bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen" charset="utf-8">
-		<link rel="stylesheet" href="{{ site.baseurl }}/static/lib/font-awesome/css/font-awesome.min.css" type="text/css" media="screen" charset="utf-8">
-		<link rel="stylesheet" href="{{ site.baseurl }}/static/lib/fonts/fonts.css" type="text/css" media="screen" charset="utf-8">
-		<link rel="stylesheet" href="{{ site.baseurl }}/static/stylesheets/screen.css" type="text/css" media="screen" charset="utf-8" />
-		<link rel="stylesheet" href="{{ site.baseurl }}/static/stylesheets/small.css" type="text/css" media="screen and (max-width: 767px)" charset="utf-8" />
+		<link rel="stylesheet" href="static/lib/bootstrap/css/bootstrap.min.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="static/lib/bootstrap/css/bootstrap-responsive.min.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="static/lib/font-awesome/css/font-awesome.min.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="static/lib/fonts/fonts.css" type="text/css" media="screen" charset="utf-8">
+		<link rel="stylesheet" href="static/stylesheets/screen.css" type="text/css" media="screen" charset="utf-8" />
+		<link rel="stylesheet" href="static/stylesheets/small.css" type="text/css" media="screen and (max-width: 767px)" charset="utf-8" />
 
 		<!--[if IE 7]>
-			<link rel="stylesheet" href="{{ site.baseurl }}/static/fonts/fontawesome/css/font-awesome-ie7.min.css" type="text/css" media="screen" charset="utf-8">
-			<link rel="stylesheet" href="{{ site.baseurl }}/static/stylesheets/ie7.css" type="text/css" media="screen" charset="utf-8">
-			<link rel="stylesheet" href="{{ site.baseurl }}/static/lib/font-awesome/css/font-awesome-ie7.min.css" type="text/css" media="screen" charset="utf-8">
+			<link rel="stylesheet" href="static/fonts/fontawesome/css/font-awesome-ie7.min.css" type="text/css" media="screen" charset="utf-8">
+			<link rel="stylesheet" href="static/stylesheets/ie7.css" type="text/css" media="screen" charset="utf-8">
+			<link rel="stylesheet" href="static/lib/font-awesome/css/font-awesome-ie7.min.css" type="text/css" media="screen" charset="utf-8">
 		<![endif]-->
 
 	</head>
@@ -39,10 +39,10 @@
 		
 		{{ content }}
 
-		<script src="{{ site.baseurl }}/static/lib/modernizr.js" type="text/javascript" charset="utf-8"></script>
-		<script src="{{ site.baseurl }}/static/lib/jquery.1.8.2.js" type="text/javascript" charset="utf-8"></script>
-		<script src="{{ site.baseurl }}/static/lib/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
-		<script src="{{ site.baseurl }}/static/js/app.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/lib/modernizr.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/lib/jquery.1.8.2.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/lib/bootstrap/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<script src="static/js/app.js" type="text/javascript" charset="utf-8"></script>
 
 	</body>
 	

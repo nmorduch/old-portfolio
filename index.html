@@ -15,7 +15,7 @@ layout: default
 	<img class="portrait" src="static/images/front/skeptical.jpg" width="55%" />
 </div>
 
-<div id="about" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/invite.jpg">
+<div id="about" class="panel window-height-plus backstretch" data-backstretch-image="static/images/front/invite.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="span1 panel-nav">
@@ -34,7 +34,7 @@ layout: default
 	</div> <!-- ./container -->
 </div>
 
-<div id="web" class="panel panel-dark window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/3b.jpg">
+<div id="web" class="panel panel-dark window-height-plus backstretch" data-backstretch-image="static/images/front/3b.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="span1 panel-nav">
@@ -48,7 +48,7 @@ layout: default
 					<div class="row thumbgrid">
 						{% for page in site.categories.web %}
 							<div class="span3 thumb">
-								<a href="{{ site.baseurl }}{{ page.url }}"><img src="{{ site.baseurl }}/web/thumbnails/{{ page.primary_image }}" /></a>
+								<a href="{{ page.url }}"><img src="web/thumbnails/{{ page.primary_image }}" /></a>
 							</div>
 						{% endfor %}
 					</div>
@@ -58,7 +58,7 @@ layout: default
 	</div> <!-- ./container -->
 </div>
 
-<div id="print" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/polaroid.jpg">
+<div id="print" class="panel window-height-plus backstretch" data-backstretch-image="static/images/front/polaroid.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="span1 panel-nav">
@@ -72,7 +72,7 @@ layout: default
 					<div class="row thumbgrid">
 						{% for page in site.categories.print %}
 							<div class="span3 thumb">
-								<a href="{{ site.baseurl }}{{ page.url }}"><img src="{{ site.baseurl }}/print/thumbnails/{{ page.primary_image }}" /></a>
+								<a href="{{ page.url }}"><img src="print/thumbnails/{{ page.primary_image }}" /></a>
 							</div>
 						{% endfor %}
 					</div>
@@ -82,7 +82,7 @@ layout: default
 	</div> <!-- ./container -->
 </div>
 
-<div id="more" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/rangeley.jpg">
+<div id="more" class="panel window-height-plus backstretch" data-backstretch-image="static/images/front/rangeley.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="span1 panel-nav">
