@@ -1,0 +1,101 @@
+---
+layout: default
+---
+
+<div id="top" class="panel window-height-plus">
+	<div class="top-text">
+		<img class="name" src="static/images/front/name.png" width="756" />
+		<nav class="top-nav">
+			<a href="#about" data-smooth-scroll>About me</a>
+			<a href="#web" data-smooth-scroll>Web</a>
+			<a href="#print" data-smooth-scroll>Print</a>
+			<a href="#more" data-smooth-scroll>More</a>
+		</nav>
+	</div>
+	<img class="portrait" src="static/images/front/skeptical.jpg" width="55%" />
+</div>
+
+<div id="about" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/invite.jpg">
+	<div class="container">
+		<div class="row">
+			<div class="span1 panel-nav">
+				<a href="#top" data-smooth-scroll><i class="icon-2x icon-angle-up"></i></a>
+				<a href="#web" data-smooth-scroll><i class="icon-2x icon-angle-down"></i></a>
+			</div>
+			<div class="span8 offset1">
+				<div class="panel-text">
+					<h1>Hi! I'm Naomi.</h1>
+					<h3>(That's my face that you just saw up there.)</h3>
+					<p>My foray into design has been relatively recent, but a long time coming. For as long as I can remember, I have been making things and thinking about how to make things better. I certainly think a lot about how things I design or use could be improved, and also about how to improve everything from education to cooperative governance, kitchen organization to bathroom signage.</p>
+					<p>I'm currently studying math at Oberlin College, and I rather like the way I am learning to think. Math has installed rigor in my logic and precision in my language, and Oberlin has given me a more nuanced view of the way the world works and how I can fit into it.</p>
+				</div>
+			</div>
+		</div> <!-- ./row -->
+	</div> <!-- ./container -->
+</div>
+
+<div id="web" class="panel panel-dark window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/3b.jpg">
+	<div class="container">
+		<div class="row">
+			<div class="span1 panel-nav">
+				<a href="#top" data-smooth-scroll><i class="icon-2x icon-double-angle-up"></i></a>
+				<a href="#about" data-smooth-scroll><i class="icon-2x icon-angle-up"></i></a>
+				<a href="#print" data-smooth-scroll><i class="icon-2x icon-angle-down"></i></a>
+			</div>
+			<div class="span9 offset1">
+				<div class="panel-text">
+					<h1>Web Design</h1>
+					<div class="row thumbgrid">
+						{% for page in site.categories.web %}
+							<div class="span3 thumb">
+								<a href="{{ site.baseurl }}{{ page.url }}"><img src="{{ site.baseurl }}/web/thumbnails/{{ page.primary_image }}" /></a>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div> <!-- ./row -->
+	</div> <!-- ./container -->
+</div>
+
+<div id="print" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/polaroid.jpg">
+	<div class="container">
+		<div class="row">
+			<div class="span1 panel-nav">
+				<a href="#top" data-smooth-scroll><i class="icon-2x icon-double-angle-up"></i></a>
+				<a href="#web" data-smooth-scroll><i class="icon-2x icon-angle-up"></i></a>
+				<a href="#more" data-smooth-scroll><i class="icon-2x icon-angle-down"></i></a>
+			</div>
+			<div class="span9 offset2">
+				<div class="panel-text">
+					<h1>Print Design</h1>
+					<div class="row thumbgrid">
+						{% for page in site.categories.print %}
+							<div class="span3 thumb">
+								<a href="{{ site.baseurl }}{{ page.url }}"><img src="{{ site.baseurl }}/print/thumbnails/{{ page.primary_image }}" /></a>
+							</div>
+						{% endfor %}
+					</div>
+				</div>
+			</div>
+		</div> <!-- ./row -->
+	</div> <!-- ./container -->
+</div>
+
+<div id="more" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/rangeley.jpg">
+	<div class="container">
+		<div class="row">
+			<div class="span1 panel-nav">
+				<a href="#top" data-smooth-scroll><i class="icon-2x icon-double-angle-up"></i></a>
+				<a href="#print" data-smooth-scroll><i class="icon-2x icon-angle-up"></i></a>
+			</div>
+			<div class="span5 offset6">
+				<div class="panel-text">
+					<h1>More</h1>
+					<p>You might also like to check out my <a href="nmorduch.tumblr.com">blog</a>. You can filter by tags on the right.</p>
+					<p>And you should follow my fledgeling <a href="https://twitter.com/nmorduch">Twitter</a> account.</p>
+				</div>
+			</div>
+		</div> <!-- ./row -->
+	</div> <!-- ./container -->
+</div>

@@ -1,0 +1,42 @@
+/* line 18, ../sass/small.sass */
+body {
+  padding: 0;
+}
+
+/* line 21, ../sass/small.sass */
+h1 {
+  text-align: center;
+}
+
+/* line 24, ../sass/small.sass */
+.panel {
+  padding: 20px;
+}
+
+/* line 27, ../sass/small.sass */
+.panel-text, #print .panel-text, #more .panel-text {
+  padding: 20px 10px;
+  margin: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* line 35, ../sass/small.sass */
+.panel-nav {
+  display: none;
+}
+
+/* line 38, ../sass/small.sass */
+.thumbgrid {
+  width: 100%;
+  margin-bottom: -15px;
+}
+
+/* line 42, ../sass/small.sass */
+.thumb {
+  width: 30%;
+  float: left;
+  margin: 15px 1.5%;
+}

@@ -1,0 +1,170 @@
+@import "compass/css3"
+@import "compass/utilities/general/clearfix"
+
+$sans-fonts: museosans, helvetica, sans
+$serif-fonts: museoslab, georgia, serif
+$gray-dark: #333
+$gray-mid: #666
+$gray-light: #d0d0d0
+$a-color: #1883F5
+
+$large-screen-min-width: 1200px // differs from bootstrap value of 1210px
+$large-screen-min-height: 800px
+$desktop-max-width: 1210px
+$landscape-tablet-max-width: 979px
+$portrait-tablet-max-width: 767px
+$phone-max-width: 480px
+
+
+body
+	font-family: $sans-fonts
+	font-size: 16px
+	line-height: 20px
+	position: relative
+
+h1, h2, h3, h4, h5, h6
+	font-family: $serif-fonts
+	font-weight: normal
+
+a
+	color: $a-color
+
+.relative
+	position: relative
+
+.nav>li>a:hover, .nav>li>a:focus
+	background-color: transparent
+
+.nav-dark
+	color: white
+	a
+		color: white
+	a:hover
+		color: #ccc
+		text-decoration: none
+
+.panel
+	position: relative
+
+.backstretch
+	+background-size(cover)
+	background:
+		position: center center
+
+.panel-text
+	+border-radius(5px)
+	background-color: rgba(white,.5)
+	position: relative
+	top: 60px
+	padding: 20px
+	margin: 0 -20px 120px -20px
+	> h1:first-child
+		margin-top: 0
+	> p:last-child
+		margin-bottom: 0
+	#print &, #more &
+		left: -20px
+
+.panel-nav
+	@extend .panel-text
+	padding: 10px
+	margin: 0 -10px
+	left: 10px
+	text-align: center
+	a
+		color: black
+	a:hover
+		color: $gray-mid
+
+.panel-dark
+	color: white
+	.panel-text
+		background: rgba(black,.5)
+	.panel-nav
+		a
+			color: white
+		a:hover
+			color: $gray-light
+
+.top-text
+	position: absolute
+	right: 15%
+	top: 30%
+	max-width: 35%
+
+.name
+	margin-bottom: 20px
+
+.top-nav
+	+clearfix
+	font-size: 26px
+	line-height: 26px
+	margin-left: 4px
+	width: 115%
+	> a
+		margin-right: 20px
+		float: left
+		color: black
+		&:hover
+			color: $gray-mid
+			text-decoration: none
+	@media (min-width: $large-screen-min-width)
+		font-size: 30px
+		line-height: 30px
+	@media (max-width: $landscape-tablet-max-width)
+		margin-left: 2px
+		font-size: 20px
+		line-height: 20px
+		> a
+			margin-right: 15px
+
+.portrait
+	position: absolute
+	left: -5%
+	bottom: 0
+	width: 55%
+
+.thumbgrid
+	margin-bottom: -20px
+
+.thumb
+	margin-bottom: 20px
+
+
+//// Portfolio Item ////
+
+.portfolio-item
+	background-color: $gray-dark
+	.nav > li
+		line-height: 17px
+		margin-top: 5px
+
+.portfolio-nav
+	margin-top: 45px
+	h3
+		margin: 0
+
+.name-nav
+	margin-bottom: 10px
+	width: 50%
+
+.nav-portrait
+	position: absolute
+	left: -5%
+	bottom: 0
+
+.portfolio-main
+	background-color: $gray-light
+	padding: 40px
+	padding-top: 50px
+	margin-top: -10px
+	+box-sizing(border-box)
+	+box-shadow(#262626 10px 10px)
+
+.portfolio-images
+	text-align: center
+
+.portfolio-image
+	margin-top: 40px
+	display: inline
+	

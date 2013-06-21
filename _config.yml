@@ -1,0 +1,6 @@
+exclude: [sass, config.rb]
+source: ./_source
+name: Naomi I. Morduch Toubman
+permalink: none
+baseurl: /new
+date: /:categories/:title/
