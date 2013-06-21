@@ -1,5 +1,4 @@
 exclude: [sass, config.rb]
-source: ./_source
 name: Naomi I. Morduch Toubman
 permalink: none
 date: /:categories/:title/
