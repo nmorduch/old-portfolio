@@ -56,7 +56,7 @@ a {
 }
 
 /* line 54, ../sass/screen.sass */
-.panel-text, .panel-nav {
+.panel-text {
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   -ms-border-radius: 5px;
@@ -69,52 +69,62 @@ a {
   margin: 0 -20px 120px -20px;
 }
 /* line 61, ../sass/screen.sass */
-.panel-text > h1:first-child, .panel-nav > h1:first-child {
+.panel-text > h1:first-child {
   margin-top: 0;
 }
 /* line 63, ../sass/screen.sass */
-.panel-text > p:last-child, .panel-nav > p:last-child {
+.panel-text > p:last-child {
   margin-bottom: 0;
 }
 /* line 65, ../sass/screen.sass */
-#print .panel-text, #print .panel-nav, #more .panel-text, #more .panel-nav {
+#print .panel-text, #more .panel-text {
   left: -20px;
 }
 
 /* line 68, ../sass/screen.sass */
 .panel-nav {
-  padding: 10px;
-  margin: 0 -10px;
-  left: 10px;
-  text-align: center;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  position: relative;
+  top: 60px;
+  padding: 20px 0;
+  background-color: transparent;
 }
 /* line 74, ../sass/screen.sass */
+.panel-nav i {
+  display: block;
+}
+/* line 76, ../sass/screen.sass */
 .panel-nav a {
   color: black;
 }
-/* line 76, ../sass/screen.sass */
+/* line 78, ../sass/screen.sass */
 .panel-nav a:hover {
   color: #666666;
+  text-decoration: none;
 }
 
-/* line 79, ../sass/screen.sass */
+/* line 82, ../sass/screen.sass */
 .panel-dark {
   color: white;
 }
-/* line 81, ../sass/screen.sass */
-.panel-dark .panel-text, .panel-dark .panel-nav {
+/* line 84, ../sass/screen.sass */
+.panel-dark .panel-text {
   background: rgba(0, 0, 0, 0.5);
 }
-/* line 84, ../sass/screen.sass */
+/* line 87, ../sass/screen.sass */
 .panel-dark .panel-nav a {
   color: white;
 }
-/* line 86, ../sass/screen.sass */
+/* line 89, ../sass/screen.sass */
 .panel-dark .panel-nav a:hover {
-  color: #d0d0d0;
+  color: #666666;
 }
 
-/* line 89, ../sass/screen.sass */
+/* line 92, ../sass/screen.sass */
 .top-text {
   position: absolute;
   right: 15%;
@@ -122,12 +132,12 @@ a {
   max-width: 35%;
 }
 
-/* line 95, ../sass/screen.sass */
+/* line 98, ../sass/screen.sass */
 .name {
   margin-bottom: 20px;
 }
 
-/* line 98, ../sass/screen.sass */
+/* line 101, ../sass/screen.sass */
 .top-nav {
   overflow: hidden;
   *zoom: 1;
@@ -136,38 +146,38 @@ a {
   margin-left: 4px;
   width: 115%;
 }
-/* line 104, ../sass/screen.sass */
+/* line 107, ../sass/screen.sass */
 .top-nav > a {
   margin-right: 20px;
   float: left;
   color: black;
 }
-/* line 108, ../sass/screen.sass */
+/* line 111, ../sass/screen.sass */
 .top-nav > a:hover {
   color: #666666;
   text-decoration: none;
 }
 @media (min-width: 1200px) {
-  /* line 98, ../sass/screen.sass */
+  /* line 101, ../sass/screen.sass */
   .top-nav {
     font-size: 30px;
     line-height: 30px;
   }
 }
 @media (max-width: 979px) {
-  /* line 98, ../sass/screen.sass */
+  /* line 101, ../sass/screen.sass */
   .top-nav {
     margin-left: 2px;
     font-size: 20px;
     line-height: 20px;
   }
-  /* line 118, ../sass/screen.sass */
+  /* line 121, ../sass/screen.sass */
   .top-nav > a {
     margin-right: 15px;
   }
 }
 
-/* line 121, ../sass/screen.sass */
+/* line 124, ../sass/screen.sass */
 .portrait {
   position: absolute;
   left: -5%;
@@ -175,49 +185,49 @@ a {
   width: 55%;
 }
 
-/* line 127, ../sass/screen.sass */
+/* line 130, ../sass/screen.sass */
 .thumbgrid {
   margin-bottom: -20px;
 }
 
-/* line 130, ../sass/screen.sass */
+/* line 133, ../sass/screen.sass */
 .thumb {
   margin-bottom: 20px;
 }
 
-/* line 136, ../sass/screen.sass */
+/* line 139, ../sass/screen.sass */
 .portfolio-item {
   background-color: #333333;
 }
-/* line 138, ../sass/screen.sass */
+/* line 141, ../sass/screen.sass */
 .portfolio-item .nav > li {
   line-height: 17px;
   margin-top: 5px;
 }
 
-/* line 142, ../sass/screen.sass */
+/* line 145, ../sass/screen.sass */
 .portfolio-nav {
   margin-top: 45px;
 }
-/* line 144, ../sass/screen.sass */
+/* line 147, ../sass/screen.sass */
 .portfolio-nav h3 {
   margin: 0;
 }
 
-/* line 147, ../sass/screen.sass */
+/* line 150, ../sass/screen.sass */
 .name-nav {
   margin-bottom: 10px;
   width: 50%;
 }
 
-/* line 151, ../sass/screen.sass */
+/* line 154, ../sass/screen.sass */
 .nav-portrait {
   position: absolute;
   left: -5%;
   bottom: 0;
 }
 
-/* line 156, ../sass/screen.sass */
+/* line 159, ../sass/screen.sass */
 .portfolio-main {
   background-color: #d0d0d0;
   padding: 40px;
@@ -231,12 +241,12 @@ a {
   box-shadow: #262626 10px 10px;
 }
 
-/* line 164, ../sass/screen.sass */
+/* line 167, ../sass/screen.sass */
 .portfolio-images {
   text-align: center;
 }
 
-/* line 167, ../sass/screen.sass */
+/* line 170, ../sass/screen.sass */
 .portfolio-image {
   margin-top: 40px;
   display: inline;

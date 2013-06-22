@@ -5,8 +5,8 @@ body_class: portfolio-item
 <div class="container window-height relative">
 	<div class="row">
 		<div class="span3 nav-dark portfolio-nav">
-			<a href=""><img src="static/images/nav/name-white.png" class="name-nav" width="50%" /></a>
-			<h3><a href="">Home</a></h3>
+			<a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}static/images/nav/name-white.png" class="name-nav" width="50%" /></a>
+			<h3><a href="{{ site.baseurl }}">Home</a></h3>
 			<h3>Web Design</h3>
 			<ul class="nav">
 				{% for page in site.categories.web %}
@@ -27,17 +27,17 @@ body_class: portfolio-item
 			{{ content }}
 
 			<div class="portfolio-images">
-				<a href="{{ page.categories }}/images/{{ page.primary_image }}">
-					<img src="{{ page.categories }}/images/{{ page.primary_image }}" class="portfolio-image max-height" />
+				<a href="{{ site.baseurl }}{{ page.categories }}/images/{{ page.primary_image }}">
+					<img src="{{ site.baseurl }}{{ page.categories }}/images/{{ page.primary_image }}" class="portfolio-image max-height" />
 				</a>
 				{% for additional_image in page.additional_image %}
-					<a href="{{ page.categories }}/images/{{ additional_image }}">
-						<img src="{{ page.categories }}/images/{{ additional_image }}" class="portfolio-image max-height" />
+					<a href="{{ site.baseurl }}{{ page.categories }}/images/{{ additional_image }}">
+						<img src="{{ site.baseurl }}{{ page.categories }}/images/{{ additional_image }}" class="portfolio-image max-height" />
 					</a>
 				{% endfor %}
 			</div>
 		
 		</div>
 	</div>
-	<img class="span3 nav-portrait" src="static/images/nav/skeptical-270.png" />
+	<img class="span3 nav-portrait" src="{{ site.baseurl }}static/images/nav/skeptical-270.png" />
 </div>
