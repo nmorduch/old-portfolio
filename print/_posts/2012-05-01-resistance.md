@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "Resistance"
 primary_image: "resistance.jpg"
+additional_image: "resistance-production.jpg"
 ---
 
 This poster was inspired by [Bread and Puppet](http://breadandpuppet.org/)'s [resistance](http://cdn.shopify.com/s/files/1/0080/8552/products/IMG_7383.jpg?3884) [posters](http://theyesmenfixtheworld.com/guide/images/thumb/Resistance.jpg/283px-Resistance.jpg).
