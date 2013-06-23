@@ -27,11 +27,11 @@ body_class: portfolio-item
 			{{ content }}
 
 			{% if page.link %}
-				<a href="{{ page.link }}" class="btn">See Original</a>
+				<a href="{{ page.link }}" class="btn">View Page</a>
 			{% endif %}
 
 			<div class="portfolio-images">
-				<a href="{{ site.baseurl }}{{ page.categories }}/images/{{ page.primary_image }}">
+				<a href="{{ site.baseurl }}{{ page.categories }}/images{% if page.primary_alt %}_alt{% endif %}/{{ page.primary_image }}">
 					<img src="{{ site.baseurl }}{{ page.categories }}/images/{{ page.primary_image }}" class="portfolio-image max-height" />
 				</a>
 				{% for additional_image in page.additional_image %}

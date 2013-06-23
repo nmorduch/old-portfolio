@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "Fambly Card"
 primary_image: "fambly.jpg"
+primary_alt: true
 link: "http://fambly.masoevda.com/"
 ---
 

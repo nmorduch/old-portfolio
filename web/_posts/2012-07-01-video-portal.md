@@ -2,6 +2,7 @@
 layout: portfolio-item
 title: "Oberlin Video Portal"
 primary_image: "video-portal.jpg"
+primary_alt: true
 link: "http://naomi.makesomethingeveryday.com/video-portal/index.html"
 ---
 
