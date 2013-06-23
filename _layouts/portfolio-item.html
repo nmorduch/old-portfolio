@@ -26,6 +26,10 @@ body_class: portfolio-item
 
 			{{ content }}
 
+			{% if page.link %}
+				<a href="{{ page.link }}" class="btn">See Original</a>
+			{% endif %}
+
 			<div class="portfolio-images">
 				<a href="{{ site.baseurl }}{{ page.categories }}/images/{{ page.primary_image }}">
 					<img src="{{ site.baseurl }}{{ page.categories }}/images/{{ page.primary_image }}" class="portfolio-image max-height" />
