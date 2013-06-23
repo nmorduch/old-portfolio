@@ -224,41 +224,50 @@ a:hover {
 /* line 152, ../sass/screen.sass */
 .thumb {
   margin-bottom: 20px;
+  background-color: white;
+}
+/* line 155, ../sass/screen.sass */
+.panel-dark .thumb {
+  background-color: black;
+}
+/* line 157, ../sass/screen.sass */
+.thumb > a:hover {
+  opacity: 0.8;
 }
 
-/* line 158, ../sass/screen.sass */
+/* line 163, ../sass/screen.sass */
 .portfolio-item {
   background-color: #333333;
 }
-/* line 160, ../sass/screen.sass */
+/* line 165, ../sass/screen.sass */
 .portfolio-item .nav > li {
   line-height: 17px;
   margin-top: 5px;
 }
 
-/* line 164, ../sass/screen.sass */
+/* line 169, ../sass/screen.sass */
 .portfolio-nav {
   margin-top: 45px;
 }
-/* line 166, ../sass/screen.sass */
+/* line 171, ../sass/screen.sass */
 .portfolio-nav h3 {
   margin: 0;
 }
 
-/* line 169, ../sass/screen.sass */
+/* line 174, ../sass/screen.sass */
 .name-nav {
   margin-bottom: 10px;
   width: 50%;
 }
 
-/* line 173, ../sass/screen.sass */
+/* line 178, ../sass/screen.sass */
 .nav-portrait {
   position: absolute;
   left: -5%;
   bottom: 0;
 }
 
-/* line 178, ../sass/screen.sass */
+/* line 183, ../sass/screen.sass */
 .portfolio-main {
   background-color: #d0d0d0;
   padding: 40px;
@@ -272,12 +281,12 @@ a:hover {
   box-shadow: #262626 10px 10px;
 }
 
-/* line 186, ../sass/screen.sass */
+/* line 191, ../sass/screen.sass */
 .portfolio-images {
   text-align: center;
 }
 
-/* line 189, ../sass/screen.sass */
+/* line 194, ../sass/screen.sass */
 .portfolio-image {
   margin-top: 40px;
   display: inline;
