@@ -21,6 +21,16 @@ body
 h1
 	text-align: center
 
+.nav
+	margin-bottom: 0
+	background-color: $gray-mid
+	li:first-child
+		padding-top: 6px
+	li:last-child
+		padding-bottom: 6px
+	a
+		padding: 4px 10px
+
 .panel
 	padding: 20px
 
@@ -35,7 +45,7 @@ h1
 #more .panel-text
 	background-color: rgba(white,.8)
 
-.panel-nav
+.panel-nav, .nav-portrait
 	display: none
 
 .thumbgrid
@@ -46,3 +56,13 @@ h1
 	width: 30%
 	float: left
 	margin: 15px 1.5%
+
+.portfolio-main, .portfolio-nav
+	padding: 40px
+	margin: 0
+
+.portfolio-main
+	padding-top: 30px
+
+.portfolio-nav
+	padding-bottom: 20px

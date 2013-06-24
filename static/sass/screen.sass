@@ -28,6 +28,10 @@ h1, h2, h3, h4, h5, h6
 	font-family: $serif-fonts
 	font-weight: normal
 
+h2
+	line-height: 30px
+	font-size: 25px
+
 a
 	+transition(.05s,color)
 	color: $a-color
@@ -48,8 +52,25 @@ a:hover
 		background: $gray-dark
 		color: $gray-light
 
+@media all and (min-width: 767px)
+	.collapse
+		height: auto !important
+		overflow: visible !important
+
 .relative
 	position: relative
+
+.accordion-group
+	border: none
+
+.collapse-handle
+	position: absolute
+	margin: 0px
+	right: 40px
+	font-size: 16px
+	line-height: inherit
+	@media all and (min-width: 767px)
+		display: none
 
 .nav>li>a:hover, .nav>li>a:focus
 	background-color: transparent

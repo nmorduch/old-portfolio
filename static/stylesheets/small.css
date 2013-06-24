@@ -9,11 +9,29 @@ h1 {
 }
 
 /* line 24, ../sass/small.sass */
+.nav {
+  margin-bottom: 0;
+  background-color: #666666;
+}
+/* line 27, ../sass/small.sass */
+.nav li:first-child {
+  padding-top: 6px;
+}
+/* line 29, ../sass/small.sass */
+.nav li:last-child {
+  padding-bottom: 6px;
+}
+/* line 31, ../sass/small.sass */
+.nav a {
+  padding: 4px 10px;
+}
+
+/* line 34, ../sass/small.sass */
 .panel {
   padding: 20px;
 }
 
-/* line 27, ../sass/small.sass */
+/* line 37, ../sass/small.sass */
 .panel-text, #print .panel-text, #more .panel-text {
   padding: 20px 10px;
   margin: 0;
@@ -23,25 +41,41 @@ h1 {
   bottom: 0;
 }
 
-/* line 35, ../sass/small.sass */
+/* line 45, ../sass/small.sass */
 #more .panel-text {
   background-color: rgba(255, 255, 255, 0.8);
 }
 
-/* line 38, ../sass/small.sass */
-.panel-nav {
+/* line 48, ../sass/small.sass */
+.panel-nav, .nav-portrait {
   display: none;
 }
 
-/* line 41, ../sass/small.sass */
+/* line 51, ../sass/small.sass */
 .thumbgrid {
   width: 100%;
   margin-bottom: -15px;
 }
 
-/* line 45, ../sass/small.sass */
+/* line 55, ../sass/small.sass */
 .thumb {
   width: 30%;
   float: left;
   margin: 15px 1.5%;
+}
+
+/* line 60, ../sass/small.sass */
+.portfolio-main, .portfolio-nav {
+  padding: 40px;
+  margin: 0;
+}
+
+/* line 64, ../sass/small.sass */
+.portfolio-main {
+  padding-top: 30px;
+}
+
+/* line 67, ../sass/small.sass */
+.portfolio-nav {
+  padding-bottom: 20px;
 }
