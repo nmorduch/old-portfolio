@@ -29,7 +29,13 @@ body_class: portfolio-item
 			{{ content }}
 
 			{% if page.link %}
-				<a href="{{ page.link }}" class="btn">View Page</a>
+				<a href="{{ page.link }}" class="btn">
+					{% if page.link_text %}
+						{{ page.link_text }}
+					{% else %}
+						View Page
+					{% endif %}
+				</a>
 			{% endif %}
 
 			<div class="portfolio-images">
