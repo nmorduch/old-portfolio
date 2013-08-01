@@ -8,13 +8,13 @@ body_class: portfolio-item
 			<a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}static/images/nav/name-white.png" class="name-nav" width="50%" /></a>
 			<h3><a href="{{ site.baseurl }}">Home</a></h3>
 			<div class="accordion-group">
-				<h3 data-toggle="collapse" data-target="#web" data-parent=".portfolio-nav">Web Design<i class="collapse-handle icon-chevron-down"></i></h3>
+				<a data-toggle="collapse" data-target="#web" data-parent=".portfolio-nav"><h3>Web Design<i class="collapse-handle icon-chevron-down"></i></h3></a>
 				<ul class="nav collapse" id="web">
 					{% for page in site.categories.web %}
 						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
 					{% endfor %}
 				</ul>
-				<h3 data-toggle="collapse" data-target="#print" data-parent=".portfolio-nav">Print Design<i class="collapse-handle icon-chevron-down"></i></h3>
+				<a data-toggle="collapse" data-target="#print" data-parent=".portfolio-nav"><h3>Print Design<i class="collapse-handle icon-chevron-down"></i></h3></a>
 				<ul class="nav collapse" id="print">
 					{% for page in site.categories.print %}
 						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
