@@ -1,6 +1,6 @@
 ---
 layout: portfolio-item
-title: "Change The World"
+title: "Change The World Wireframe"
 primary_image: "change.png"
 primary_alt: true
 link: "http://nmorduch.github.io/web/images_alt/change.png"

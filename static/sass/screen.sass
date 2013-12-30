@@ -172,11 +172,24 @@ a:hover
 
 .thumb
 	margin-bottom: 20px
-	background-color: white
+	background-color: rgba(white,.35)
+	position: relative
 	.panel-dark &
-		background-color: black
-	> a:hover
-		opacity: .8
+		background-color: rgba(black,.35)
+	> a
+		z-index: 2
+		position: relative
+		&:hover
+			opacity: 0
+	> p
+		position: absolute
+		top: 0
+		right: 0
+		bottom: 0
+		left: 0
+		margin: auto
+		text-align: center
+		height: 20px
 
 
 //// Portfolio Item ////

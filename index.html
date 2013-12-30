@@ -49,6 +49,7 @@ layout: default
 						{% for page in site.categories.web %}
 							<div class="span3 thumb">
 								<a href="{{ page.url }}"><img src="web/thumbnails/{{ page.primary_image }}" /></a>
+								<p>{{ page.title }}</p>
 							</div>
 						{% endfor %}
 					</div>
@@ -73,6 +74,7 @@ layout: default
 						{% for page in site.categories.print %}
 							<div class="span3 thumb">
 								<a href="{{ page.url }}"><img src="print/thumbnails/{{ page.primary_image }}" /></a>
+								<p>{{ page.title }}</p>
 							</div>
 						{% endfor %}
 					</div>
