@@ -82,6 +82,13 @@ a:hover
 	a:hover
 		text-decoration: none
 
+.nav-light
+	color: black
+	a
+		color: black
+	a:hover
+		text-decoration: none
+
 .panel
 	position: relative
 
@@ -201,7 +208,6 @@ a:hover
 //// Portfolio Item ////
 
 .portfolio-item
-	background-color: $gray-dark
 	.nav > li
 		line-height: 17px
 		margin-top: 5px
@@ -221,12 +227,12 @@ a:hover
 	bottom: 0
 
 .portfolio-main
-	background-color: $gray-light
+	background-color: #e5e5e5
 	padding: 40px
 	padding-top: 50px
 	margin-top: -10px
 	+box-sizing(border-box)
-	+box-shadow(#262626 10px 10px)
+	+box-shadow($a-color 10px 10px)
 
 .portfolio-images
 	text-align: center
