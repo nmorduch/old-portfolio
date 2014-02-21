@@ -181,6 +181,9 @@ a:hover
 		position: relative
 		&:hover
 			opacity: 0
+			@media (max-width: $phone-max-width)
+				opacity: .5
+
 	> p
 		position: absolute
 		top: 0
@@ -188,8 +191,11 @@ a:hover
 		bottom: 0
 		left: 0
 		margin: auto
+		padding: 0 10px
 		text-align: center
 		height: 20px
+		@media (max-width: $phone-max-width)
+			display: none
 
 
 //// Portfolio Item ////

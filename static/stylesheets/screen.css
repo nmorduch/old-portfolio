@@ -273,7 +273,13 @@ a:hover {
 .thumb > a:hover {
   opacity: 0;
 }
-/* line 184, ../sass/screen.sass */
+@media (max-width: 480px) {
+  /* line 182, ../sass/screen.sass */
+  .thumb > a:hover {
+    opacity: 0.5;
+  }
+}
+/* line 187, ../sass/screen.sass */
 .thumb > p {
   position: absolute;
   top: 0;
@@ -281,43 +287,50 @@ a:hover {
   bottom: 0;
   left: 0;
   margin: auto;
+  padding: 0 10px;
   text-align: center;
   height: 20px;
 }
+@media (max-width: 480px) {
+  /* line 187, ../sass/screen.sass */
+  .thumb > p {
+    display: none;
+  }
+}
 
-/* line 197, ../sass/screen.sass */
+/* line 203, ../sass/screen.sass */
 .portfolio-item {
   background-color: #333333;
 }
-/* line 199, ../sass/screen.sass */
+/* line 205, ../sass/screen.sass */
 .portfolio-item .nav > li {
   line-height: 17px;
   margin-top: 5px;
 }
 
-/* line 203, ../sass/screen.sass */
+/* line 209, ../sass/screen.sass */
 .portfolio-nav {
   margin-top: 45px;
 }
-/* line 205, ../sass/screen.sass */
+/* line 211, ../sass/screen.sass */
 .portfolio-nav h3 {
   margin: 0;
 }
 
-/* line 208, ../sass/screen.sass */
+/* line 214, ../sass/screen.sass */
 .name-nav {
   margin-bottom: 10px;
   width: 50%;
 }
 
-/* line 212, ../sass/screen.sass */
+/* line 218, ../sass/screen.sass */
 .nav-portrait {
   position: absolute;
   left: -5%;
   bottom: 0;
 }
 
-/* line 217, ../sass/screen.sass */
+/* line 223, ../sass/screen.sass */
 .portfolio-main {
   background-color: #d0d0d0;
   padding: 40px;
@@ -331,12 +344,12 @@ a:hover {
   box-shadow: #262626 10px 10px;
 }
 
-/* line 225, ../sass/screen.sass */
+/* line 231, ../sass/screen.sass */
 .portfolio-images {
   text-align: center;
 }
 
-/* line 228, ../sass/screen.sass */
+/* line 234, ../sass/screen.sass */
 .portfolio-image {
   margin-top: 40px;
   display: inline;
