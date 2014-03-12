@@ -9,6 +9,7 @@ $gray-mid: #666
 $gray-light: #d0d0d0
 $a-color: #1883F5
 $a-hover: #2c5ac1
+$a-light: #C2D7ED
 
 $large-screen-min-width: 1200px // differs from bootstrap value of 1210px
 $large-screen-min-height: 800px
@@ -62,12 +63,16 @@ a:hover
 
 .accordion-group
 	border: none
+	h3
+		position: relative
+
 
 .collapse-handle
 	position: absolute
 	margin: 0px
 	right: 40px
-	font-size: 16px
+	top: 0
+	font-size: 18px
 	line-height: inherit
 	@media all and (min-width: 767px)
 		display: none
@@ -232,7 +237,7 @@ a:hover
 	padding-top: 50px
 	margin-top: -10px
 	+box-sizing(border-box)
-	+box-shadow($a-color 10px 10px)
+	+box-shadow($a-light 10px 10px)
 
 .portfolio-images
 	text-align: center
