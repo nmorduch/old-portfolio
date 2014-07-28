@@ -4,7 +4,7 @@ layout: default
 
 <div id="top" class="panel window-height-plus">
 	<div class="top-text">
-		<img class="name" src="static/images/front/name.png" width="756" />
+		<img class="name" src="{{ site.baseurl }}/static/images/front/name.png" width="756" />
 		<nav class="top-nav">
 			<a href="#about" data-smooth-scroll>About me</a>
 			<a href="#web" data-smooth-scroll>Web</a>
@@ -12,10 +12,10 @@ layout: default
 			<a href="#more" data-smooth-scroll>More</a>
 		</nav>
 	</div>
-	<img class="portrait" src="static/images/front/skeptical.jpg" width="55%" />
+	<img class="portrait" src="{{ site.baseurl }}/static/images/front/skeptical.jpg" width="55%" />
 </div>
 
-<div id="about" class="panel window-height-plus backstretch" data-backstretch-image="static/images/front/invite.jpg">
+<div id="about" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/invite.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="span1 panel-nav">
@@ -34,7 +34,7 @@ layout: default
 	</div> <!-- ./container -->
 </div>
 
-<div id="web" class="panel panel-dark window-height-plus backstretch" data-backstretch-image="static/images/front/3b.jpg">
+<div id="web" class="panel panel-dark window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/3b.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="span1 panel-nav">
@@ -48,7 +48,7 @@ layout: default
 					<div class="row thumbgrid">
 						{% for page in site.categories.web %}
 							<div class="span3 thumb">
-								<a href="{{ page.url }}"><img src="web/thumbnails/{{ page.primary_image }}" /></a>
+								<a href="{{ site.baseurl }}{{ page.url }}"><img src="{{ site.baseurl }}/web/thumbnails/{{ page.primary_image }}" /></a>
 								<p>{{ page.title }}</p>
 							</div>
 						{% endfor %}
@@ -59,7 +59,7 @@ layout: default
 	</div> <!-- ./container -->
 </div>
 
-<div id="print" class="panel window-height-plus backstretch" data-backstretch-image="static/images/front/polaroid.jpg">
+<div id="print" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/polaroid.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="span1 panel-nav">
@@ -73,7 +73,7 @@ layout: default
 					<div class="row thumbgrid">
 						{% for page in site.categories.print %}
 							<div class="span3 thumb">
-								<a href="{{ page.url }}"><img src="print/thumbnails/{{ page.primary_image }}" /></a>
+								<a href="{{ site.baseurl }}{{ page.url }}"><img src="{{ site.baseurl }}/print/thumbnails/{{ page.primary_image }}" /></a>
 								<p>{{ page.title }}</p>
 							</div>
 						{% endfor %}
@@ -84,7 +84,7 @@ layout: default
 	</div> <!-- ./container -->
 </div>
 
-<div id="more" class="panel window-height-plus backstretch" data-backstretch-image="static/images/front/rangeley.jpg">
+<div id="more" class="panel window-height-plus backstretch" data-backstretch-image="{{ site.baseurl }}/static/images/front/rangeley.jpg">
 	<div class="container">
 		<div class="row">
 			<div class="panel-dark"><div class="span1 panel-nav">

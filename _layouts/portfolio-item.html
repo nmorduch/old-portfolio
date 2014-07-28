@@ -5,19 +5,19 @@ body_class: portfolio-item
 <div class="container window-height relative">
 	<div class="row">
 		<div class="span3 nav-light portfolio-nav">
-			<a href="{{ site.baseurl }}"><img src="{{ site.baseurl }}static/images/front/name.png" class="name-nav" width="50%" /></a>
-			<h3><a href="{{ site.baseurl }}">Home</a></h3>
+			<a href="{{ site.baseurl }}/"><img src="{{ site.baseurl }}/static/images/front/name.png" class="name-nav" width="50%" /></a>
+			<h3><a href="{{ site.baseurl }}/">Home</a></h3>
 			<div class="accordion-group">
 				<a href="javascript:void(0);" data-toggle="collapse" data-target="#web" data-parent=".portfolio-nav"><h3>Web Design<i class="collapse-handle fa fa-chevron-down visible-phone"></i></h3></a>
 				<ul class="nav collapse" id="web">
 					{% for page in site.categories.web %}
-						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+						<li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
 					{% endfor %}
 				</ul>
 				<a href="javascript:void(0);" data-toggle="collapse" data-target="#print" data-parent=".portfolio-nav"><h3>Print Design<i class="collapse-handle fa fa-chevron-down visible-phone"></i></h3></a>
 				<ul class="nav collapse" id="print">
 					{% for page in site.categories.print %}
-						<li><a href="{{ page.url }}">{{ page.title }}</a></li>
+						<li><a href="{{ site.baseurl }}{{ page.url }}">{{ page.title }}</a></li>
 					{% endfor %}
 				</ul>
 			</div>
@@ -39,17 +39,17 @@ body_class: portfolio-item
 			{% endif %}
 
 			<div class="portfolio-images">
-				<a href="{{ site.baseurl }}{{ page.categories }}/images{% if page.primary_alt %}_alt{% endif %}/{{ page.primary_image }}">
-					<img src="{{ site.baseurl }}{{ page.categories }}/images/{{ page.primary_image }}" class="portfolio-image max-height" />
+				<a href="{{ site.baseurl }}/{{ page.categories }}/images{% if page.primary_alt %}_alt{% endif %}/{{ page.primary_image }}">
+					<img src="{{ site.baseurl }}/{{ page.categories }}/images/{{ page.primary_image }}" class="portfolio-image max-height" />
 				</a>
 				{% for additional_image in page.additional_image %}
-					<a href="{{ site.baseurl }}{{ page.categories }}/images/{{ additional_image }}">
-						<img src="{{ site.baseurl }}{{ page.categories }}/images/{{ additional_image }}" class="portfolio-image max-height" />
+					<a href="{{ site.baseurl }}/{{ page.categories }}/images/{{ additional_image }}">
+						<img src="{{ site.baseurl }}/{{ page.categories }}/images/{{ additional_image }}" class="portfolio-image max-height" />
 					</a>
 				{% endfor %}
 			</div>
 		
 		</div>
 	</div>
-	<img class="span3 nav-portrait" src="{{ site.baseurl }}static/images/nav/skeptical-270.png" />
+	<img class="span3 nav-portrait" src="{{ site.baseurl }}/static/images/nav/skeptical-270.png" />
 </div>
