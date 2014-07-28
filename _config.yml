@@ -3,3 +3,4 @@ name: Naomi I. Morduch Toubman
 permalink: none
 date: /:categories/:title/
 baseurl: /old-portfolio
+markdown: kramdown
